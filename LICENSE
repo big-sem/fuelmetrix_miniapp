@@ -1,0 +1,11 @@
+Copyright (c) 2026 fuelmetrix
+
+All rights reserved.
+
+This package and the compiled binaries it bundles (mini_native_lib for
+Android, MiniNativeLib.xcframework for iOS) are proprietary software.
+Permission is granted to use this package as a dependency in your own
+Flutter application via pub.dev. Redistribution, reverse engineering, or
+extraction of the bundled native binaries outside of their intended use
+as a Flutter plugin dependency is not permitted without prior written
+consent from fuelmetrix.
