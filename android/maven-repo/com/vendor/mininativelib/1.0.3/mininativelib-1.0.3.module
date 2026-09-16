@@ -3,7 +3,7 @@
   "component": {
     "group": "com.vendor",
     "module": "mininativelib",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -33,13 +33,13 @@
       ],
       "files": [
         {
-          "name": "mininativelib-1.0.2.aar",
-          "url": "mininativelib-1.0.2.aar",
-          "size": 4040298,
-          "sha512": "b1d79845aec24753987e4a1e6f621462194a39d1fcb4569bc080e2bee9b2658443ac094829547d15be6d0807ac1fdb111bca5f89a750d3db8549beb11e4ad06c",
-          "sha256": "634a4f3ce6762aa2dff834578cdcd1f6537ae8f8301e3b22f9eb2ececd7832dc",
-          "sha1": "96beffa142c3252de592779e1b024b9133d3722d",
-          "md5": "cec36fb5fd73eaab33b5a0c4d0fbec70"
+          "name": "mininativelib-1.0.3.aar",
+          "url": "mininativelib-1.0.3.aar",
+          "size": 4041134,
+          "sha512": "cf519e88fbf6ae80b3b3fd711a64a5ed05a2307fcbe81dbfecc90e99b298b5df1330707af55c7c1af09ca93f8c094c4a47ced6640880d92487ffcd85a289b343",
+          "sha256": "6d00c2e9a2a4c76921cb95c6bca57747e10ac35496eb545a94c0bcdeee4bbe66",
+          "sha1": "eb0935b58127fe0d95e28d64ce0ca3a114ec0719",
+          "md5": "dc8fa9683bcf7262c34c905c0facc365"
         }
       ]
     },
@@ -111,13 +111,13 @@
       ],
       "files": [
         {
-          "name": "mininativelib-1.0.2.aar",
-          "url": "mininativelib-1.0.2.aar",
-          "size": 4040298,
-          "sha512": "b1d79845aec24753987e4a1e6f621462194a39d1fcb4569bc080e2bee9b2658443ac094829547d15be6d0807ac1fdb111bca5f89a750d3db8549beb11e4ad06c",
-          "sha256": "634a4f3ce6762aa2dff834578cdcd1f6537ae8f8301e3b22f9eb2ececd7832dc",
-          "sha1": "96beffa142c3252de592779e1b024b9133d3722d",
-          "md5": "cec36fb5fd73eaab33b5a0c4d0fbec70"
+          "name": "mininativelib-1.0.3.aar",
+          "url": "mininativelib-1.0.3.aar",
+          "size": 4041134,
+          "sha512": "cf519e88fbf6ae80b3b3fd711a64a5ed05a2307fcbe81dbfecc90e99b298b5df1330707af55c7c1af09ca93f8c094c4a47ced6640880d92487ffcd85a289b343",
+          "sha256": "6d00c2e9a2a4c76921cb95c6bca57747e10ac35496eb545a94c0bcdeee4bbe66",
+          "sha1": "eb0935b58127fe0d95e28d64ce0ca3a114ec0719",
+          "md5": "dc8fa9683bcf7262c34c905c0facc365"
         }
       ]
     }
