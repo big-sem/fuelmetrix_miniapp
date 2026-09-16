@@ -1,3 +1,8 @@
+## 0.0.2
+
+* Trim README to usage only.
+* Drop repository/homepage links from package metadata.
+
 ## 0.0.1
 
 Initial release.

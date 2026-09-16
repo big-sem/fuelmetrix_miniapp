@@ -4,13 +4,12 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'fuelmetrix_miniapp'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Embeds the fuelmetrix native mini app inside a host Flutter app.'
   s.description      = <<-DESC
-Embeds the fuelmetrix mini app (wallet, refuel, purchase history, QPay)
-inside a host Flutter app as a native PlatformView.
+Embeds the fuelmetrix mini app inside a host Flutter app as a native PlatformView.
                        DESC
-  s.homepage         = 'https://github.com/big-sem/fuelmetrix_miniapp'
+  s.homepage         = 'https://pub.dev/packages/fuelmetrix_miniapp'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'fuelmetrix' => 'noreply@fuelmetrix.example' }
   s.source           = { :path => '.' }
