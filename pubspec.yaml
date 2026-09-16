@@ -1,7 +1,7 @@
 name: fuelmetrix_miniapp
 description: "Embeds the fuelmetrix native mini app (wallet, refuel, QPay) inside a host Flutter app via a PlatformView."
 version: 0.0.1
-repository: https://github.com/Gal-Erdene-dreamer/fuelmetrix_miniapp
+repository: https://github.com/big-sem/fuelmetrix_miniapp
 
 environment:
   sdk: ^3.11.1

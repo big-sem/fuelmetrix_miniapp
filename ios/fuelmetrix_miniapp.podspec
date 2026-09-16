@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 Embeds the fuelmetrix mini app (wallet, refuel, purchase history, QPay)
 inside a host Flutter app as a native PlatformView.
                        DESC
-  s.homepage         = 'https://github.com/Gal-Erdene-dreamer/fuelmetrix_miniapp'
+  s.homepage         = 'https://github.com/big-sem/fuelmetrix_miniapp'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'fuelmetrix' => 'noreply@fuelmetrix.example' }
   s.source           = { :path => '.' }
