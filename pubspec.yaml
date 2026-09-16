@@ -1,6 +1,6 @@
 name: fuelmetrix_miniapp
 description: "Embeds the fuelmetrix native mini app inside a host Flutter app via a PlatformView."
-version: 0.0.2
+version: 0.0.3
 
 environment:
   sdk: ^3.11.1
