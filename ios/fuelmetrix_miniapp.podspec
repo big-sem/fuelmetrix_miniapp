@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'fuelmetrix_miniapp'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          = 'Embeds the fuelmetrix native mini app inside a host Flutter app.'
   s.description      = <<-DESC
 Embeds the fuelmetrix mini app inside a host Flutter app as a native PlatformView.

@@ -1,0 +1,5 @@
+framework module MiniNativeLib {
+  umbrella header "MiniNativeLib-Swift.h"
+  export *
+  module * { export * }
+}

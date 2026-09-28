@@ -1,3 +1,10 @@
+## 0.0.6
+
+* Fix: `MiniNativeLib.xcframework` only ever shipped a simulator slice,
+  so `import MiniNativeLib` failed on any real-device iOS build. Now
+  bundles both an `ios-arm64` (device) and `ios-arm64_x86_64-simulator`
+  slice.
+
 ## 0.0.5
 
 * `FuelmetrixMiniApp` gains an optional `merchantCustomerId` param — the
