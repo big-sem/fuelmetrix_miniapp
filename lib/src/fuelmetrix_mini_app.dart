@@ -22,6 +22,7 @@ class FuelmetrixMiniApp extends StatefulWidget {
     required this.phone,
     required this.clientId,
     required this.clientSecret,
+    this.merchantCustomerId,
   });
 
   /// The logged-in host user's phone number.
@@ -31,6 +32,12 @@ class FuelmetrixMiniApp extends StatefulWidget {
   /// the mini app's own internal secrets.
   final String clientId;
   final String clientSecret;
+
+  /// The host's own identifier for this user within its loyalty program, if
+  /// it has one. Optional — omit it if the host has nothing to pass. Used
+  /// by the mini app to redeem loyalty points against the right
+  /// merchant-side customer record.
+  final String? merchantCustomerId;
 
   @override
   State<FuelmetrixMiniApp> createState() => _FuelmetrixMiniAppState();
@@ -67,6 +74,7 @@ class _FuelmetrixMiniAppState extends State<FuelmetrixMiniApp> {
       'phone': widget.phone,
       'clientId': widget.clientId,
       'clientSecret': widget.clientSecret,
+      'merchantCustomerId': widget.merchantCustomerId ?? '',
     };
 
     return PopScope(

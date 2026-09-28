@@ -19,7 +19,7 @@ public enum MiniAppSdk {
   public static func getMessage() -> Swift.String
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class MiniAppView : UIKit.UIView, WebKit.WKScriptMessageHandler, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate {
-  @_Concurrency.MainActor @preconcurrency public init(phone: Swift.String, clientId: Swift.String, clientSecret: Swift.String, onClose: @escaping () -> Swift.Void = {})
+  @_Concurrency.MainActor @preconcurrency public init(phone: Swift.String, clientId: Swift.String, clientSecret: Swift.String, merchantCustomerId: Swift.String = "", onClose: @escaping () -> Swift.Void = {})
   @_Concurrency.MainActor @preconcurrency final public func dispose()
   @_Concurrency.MainActor @preconcurrency final public func handleBackPressed()
   #if compiler(>=5.3) && $NonescapableTypes

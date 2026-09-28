@@ -50,8 +50,12 @@ private class MiniAppViewFactory: NSObject, FlutterPlatformViewFactory {
     guard let clientSecret = params?["clientSecret"] as? String else {
       fatalError("miniapp_view: missing required \"clientSecret\" creation param")
     }
+    // Optional — a host with no loyalty-program identifier for this user
+    // just omits it (FuelmetrixMiniApp defaults it to '').
+    let merchantCustomerId = params?["merchantCustomerId"] as? String ?? ""
     return MiniAppViewPlatformView(
-      phone: phone, clientId: clientId, clientSecret: clientSecret, messenger: messenger)
+      phone: phone, clientId: clientId, clientSecret: clientSecret,
+      merchantCustomerId: merchantCustomerId, messenger: messenger)
   }
 }
 
@@ -59,11 +63,15 @@ private class MiniAppViewPlatformView: NSObject, FlutterPlatformView {
   private let channel: FlutterMethodChannel
   private let miniAppView: MiniAppView
 
-  init(phone: String, clientId: String, clientSecret: String, messenger: FlutterBinaryMessenger) {
+  init(
+    phone: String, clientId: String, clientSecret: String, merchantCustomerId: String,
+    messenger: FlutterBinaryMessenger
+  ) {
     let channel = FlutterMethodChannel(name: eventsChannelName, binaryMessenger: messenger)
     self.channel = channel
     self.miniAppView = MiniAppView(
       phone: phone, clientId: clientId, clientSecret: clientSecret,
+      merchantCustomerId: merchantCustomerId,
       onClose: { channel.invokeMethod("close", arguments: nil) })
     super.init()
 

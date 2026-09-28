@@ -79,5 +79,5 @@ dependencies {
     // The vendor's mini app SDK, resolved from their Maven repo — a
     // compiled .aar only, no .kt source. Its own dependencies (CameraX,
     // etc) resolve automatically via its POM, same as any Maven artifact.
-    implementation("com.vendor:mininativelib:1.0.3")
+    implementation("com.vendor:mininativelib:1.0.4")
 }

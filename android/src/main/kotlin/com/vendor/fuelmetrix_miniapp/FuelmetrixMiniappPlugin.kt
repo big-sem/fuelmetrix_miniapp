@@ -51,7 +51,10 @@ private class MiniAppViewFactory(
             ?: error("miniapp_view: missing required \"clientId\" creation param")
         val clientSecret = params["clientSecret"] as? String
             ?: error("miniapp_view: missing required \"clientSecret\" creation param")
-        return MiniAppViewPlatformView(context, phone, clientId, clientSecret, messenger)
+        // Optional — a host with no loyalty-program identifier for this user
+        // just omits it (FuelmetrixMiniApp defaults it to '').
+        val merchantCustomerId = params["merchantCustomerId"] as? String ?: ""
+        return MiniAppViewPlatformView(context, phone, clientId, clientSecret, merchantCustomerId, messenger)
     }
 }
 
@@ -60,6 +63,7 @@ private class MiniAppViewPlatformView(
     phone: String,
     clientId: String,
     clientSecret: String,
+    merchantCustomerId: String,
     messenger: BinaryMessenger,
 ) : PlatformView {
     private val channel = MethodChannel(messenger, EVENTS_CHANNEL)
@@ -68,6 +72,7 @@ private class MiniAppViewPlatformView(
         phone = phone,
         clientId = clientId,
         clientSecret = clientSecret,
+        merchantCustomerId = merchantCustomerId,
         onClose = { channel.invokeMethod("close", null) },
     )
 
